@@ -54,7 +54,7 @@ const Questions = () => {
                 </div>
 
                 <div className="hero bg-gray-800 mt-16">
-                    <div className="hero-content text-center text-white text-xl letter-spacing">
+                    <div className="hero-content text-center text-white text-xl">
                         <div className="max-w-md">
                             {filteredQuestions.length > 0 ? (
                                 <>
