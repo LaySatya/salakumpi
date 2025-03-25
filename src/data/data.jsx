@@ -243,4 +243,122 @@ export const questions = [
     },
 
     // នាងអែសធើ
+
+    // គ្រូសុខហេង
+    {
+        question: "តើកណ្ឌគម្ពីរមួយណាដែលអត់មាននិយាយអំពីព្រះជាម្ចាស់?",
+        answer: "កណ្ឌ អែសធើរ",
+        type: 3  // represented ester questions
+    },
+    {
+        question: "ក្រោយពីទទួលបានការអនុញ្ញាត សាសន៍យូដាទាំងអស់បាននាំគ្នាត្រឡប់ទៅវិញ តែមានមនុស្សពីរនាក់ ក្នុងចំណោមពួកយូដាផ្សេងទៀតមិនបានត្រឡប់ទៅវិញទេ តើជាអ្នកណា?",
+        answer: "ម៉ាដេកាយ និងអែសធើរ",
+        type: 3  // represented ester questions
+    },
+    {
+        question: "តើឈ្មោះ១ទៀត របស់អែសធើរ ជាអ្វី?",
+        answer: "ហាដាសា",
+        type: 3  // represented ester questions
+    },
+    {
+        question: "តើភ្នាក់ងារ ២នាក់ ដែលចង់ធ្វើឃាតស្ដេចអ៍ហាស៊ូរុសឈ្មោះអ្វីខ្លះ?",
+        answer: "ប៊ីកថាន និងថេរែស",
+        type: 3  // represented ester questions
+    },
+    {
+        question: "តើអ្នកណាដែលជាខ្មាំងសត្រូវរបស់ម៉ាដេកាយ និងសាសន៍យូដា?",
+        answer: "ហាម៉ាន",
+        type: 3  // represented ester questions
+    },
+    {
+        question: "តើអ្នកណាដែលហាម៉ានចង់បំផ្លាញ?",
+        answer: "សាសន៍យូដា ទាំងអស់",
+        type: 3  // represented ester questions
+    },
+    {
+        question: "តើហាម៉ាន បានប្រគល់ប្រាក់ប៉ុន្មានដល់ស្ដេច ដើម្បីបំផ្លាញសាសន៍យូដា?",
+        answer: "១មុឺនហាប",
+        type: 3  // represented ester questions
+    },
+    {
+        question: "នៅពេលឈ្នះលើខ្មាំងសត្រូវហើយ តើពួកគេប្រារព្ធធ្វើពិធីបុណ្យអ្វី?",
+        answer: "បុណ្យពោរ",
+        type: 3  // represented ester questions
+    },
+
+    // គ្រូសុផុន
+
+    {
+        question: "តើស្ដេចអ័ហាស៊ូរុស សោយរាជ្យលើប៉ុន្មានខេត្ត?",
+        answer: "១២៧ខេត្ត",
+        type: 3  // represented ester questions
+    },
+    {
+        question: "តើនរណាដែលបានទទួលការតែងតាំងអោយធ្វើជាអគ្គមហេសីជំនួសព្រះនាង វ៉ាសធី?",
+        answer: "អេសធើ",
+        type: 3  // represented ester questions
+    },
+    {
+        question: "តើម៉ាដេកាយនិងអេសធើ ត្រូវជាអ្វីនឹងគ្នា?",
+        answer: "បងប្អុនជីដូនមួយ",
+        type: 3  // represented ester questions
+    },
+    {
+        question: "តើអ្នកដែលចង់សំលាប់ជនជាតិអ៊ីស្រាអែលផ្ដាច់ពូជ មានឈ្មោះអ្វី?",
+        answer: "ហាម៉ាន",
+        type: 3  // represented ester questions
+    },
+    {
+        question: "តើបុណ្យដែលបានកំណត់ក្នងការសំលាប់ជនជាតិអ៊ីស្រាអែល ឈ្មោះបុណ្យអ្វី?",
+        answer: "បុណ្យពោរ",
+        type: 3  // represented ester questions
+    },
+    {
+        question: "តើហាម៉ានមានកូនប៉ុន្មាននាក់?",
+        answer: "១០នាក់",
+        type: 3  // represented ester questions
+    },
+    {
+        question: "តើឈ្មោះមួយទៀតតបស់អេសធើឈ្មោះអ្វី?",
+        answer: "ហាដាសា",
+        type: 3  // represented ester questions
+    },
+
+    // គ្រូខុម
+
+    {
+        question: "តើស្ដេចមានឈ្មោះអ្វី? ហើយសោយរាជ្យលើប៉ុន្មានខេត្ត?",
+        answer: "ដែលចាប់តាំងពីស្រុកក្លិង្គរហូតអេធីយ៉ូពី អ័ហាសូរូស សោយរាជ្យ១២៧ខេត្ត",
+        type: 3  // represented ester questions
+    },
+    {
+        question: "តើព្រះនាងឈ្មោះអ្វីដែលបានបដិសេធការអញ្ជើញរបស់ស្ដេចចូលរួមកម្មវិធី?",
+        answer: "វ៉ាសធី",
+        type: 3  // represented ester questions
+    },
+    {
+        question: "នៅក្រុងស៊ូសានមានសាសន៍យូដាម្នាក់ឈ្មោះអ្វីដែលជាពូជបេនយ៉ាមីន?",
+        answer: "ម៉ាដេកាយ",
+        type: 3  // represented ester questions
+    },
+    {
+        question: "តើព្រះនាងអែសធើមានឈ្មោះមួយផ្សេងទៀតហៅថាអ្វី?",
+        answer: "ហាដាសា",
+        type: 3  // represented ester questions
+    },
+    {
+        question: "តើស្ដេចអ័ហាសូរុសបានលើកដំកើងមនុស្សម្នាក់ដែលមានឈ្មោះដាអ្វី?ជាកូនអ្នកណា?សាសន៍?",
+        answer: "ហាម៉ាន ជាកូនអាំម្ដាថា សាសន៍អ័កាក់",
+        type: 3  // represented ester questions
+    },
+    {
+        question: "តើពួកសាសន៍យូដាបានការពារខ្លួនដោយសំលាប់មនុស្សអស់ប៉ុន្មាននាក់?",
+        answer: "៧មុឺន៥ពាន់នាក់",
+        type: 3  // represented ester questions
+    },
+
+    // កិច្ចការ
+    
+    // គ្រូសុខហេង
+    
 ];
