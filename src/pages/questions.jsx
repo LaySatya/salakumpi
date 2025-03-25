@@ -32,6 +32,7 @@ const Questions = () => {
     };
 
     const getTeacherName = (name) => {
+        
         switch (name) {
             case "heng":
                 return "ហ៊ួរ សុខហេង"
@@ -54,7 +55,7 @@ const Questions = () => {
                 return "អេសធើរ"
             case 4:
                 return "កិច្ចការ"
-            case 5:
+            case 0:
                 return "អែសរ៉ាំ, នេហេមា, អេសធើរ, កិច្ចការ"
             default:
                 return "មិនស្គាល់"
@@ -90,7 +91,7 @@ const Questions = () => {
                         </svg>
                         <h1 className="text-3xl ml-1">
                             {
-                                getTeacherName(filteredQuestions[currentIndex].teacher)
+                                filteredQuestions.length > 0 ? getTeacherName(filteredQuestions[currentIndex].teacher) : "មិនស្គាល់"
                             }
                         </h1>
                     </div>
