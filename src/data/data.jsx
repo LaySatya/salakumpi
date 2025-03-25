@@ -295,37 +295,37 @@ export const questions = [
         question: "តើកណ្ឌគម្ពីរមួយណាដែលអត់មាននិយាយអំពីព្រះជាម្ចាស់?",
         answer: "កណ្ឌ អែសធើរ",
         type: 3,  // represented ester questions
-        teacher: "phon"
+        teacher: "heng"
     },
     {
         question: "ក្រោយពីទទួលបានការអនុញ្ញាត សាសន៍យូដាទាំងអស់បាននាំគ្នាត្រឡប់ទៅវិញ តែមានមនុស្សពីរនាក់ ក្នុងចំណោមពួកយូដាផ្សេងទៀតមិនបានត្រឡប់ទៅវិញទេ តើជាអ្នកណា?",
         answer: "ម៉ាដេកាយ និងអែសធើរ",
         type: 3,  // represented ester questions
-        teacher: "phon"
+        teacher: "heng"
     },
     {
         question: "តើឈ្មោះ១ទៀត របស់អែសធើរ ជាអ្វី?",
         answer: "ហាដាសា",
         type: 3,  // represented ester questions
-        teacher: "phon"
+        teacher: "heng"
     },
     {
         question: "តើភ្នាក់ងារ ២នាក់ ដែលចង់ធ្វើឃាតស្ដេចអ៍ហាស៊ូរុសឈ្មោះអ្វីខ្លះ?",
         answer: "ប៊ីកថាន និងថេរែស",
         type: 3,  // represented ester questions
-        teacher: "phon"
+        teacher: "heng"
     },
     {
         question: "តើអ្នកណាដែលជាខ្មាំងសត្រូវរបស់ម៉ាដេកាយ និងសាសន៍យូដា?",
         answer: "ហាម៉ាន",
         type: 3,  // represented ester questions
-        teacher: "phon"
+        teacher: "heng"
     },
     {
         question: "តើអ្នកណាដែលហាម៉ានចង់បំផ្លាញ?",
         answer: "សាសន៍យូដា ទាំងអស់",
         type: 3,  // represented ester questions
-        teacher: "phon"
+        teacher: "heng"
     },
     {
         question: "តើហាម៉ាន បានប្រគល់ប្រាក់ប៉ុន្មានដល់ស្ដេច ដើម្បីបំផ្លាញសាសន៍យូដា?",
@@ -337,7 +337,7 @@ export const questions = [
         question: "នៅពេលឈ្នះលើខ្មាំងសត្រូវហើយ តើពួកគេប្រារព្ធធ្វើពិធីបុណ្យអ្វី?",
         answer: "បុណ្យពោរ",
         type: 3,  // represented ester questions
-        teacher: "phon"
+        teacher: "heng"
     },
 
     // phon
@@ -425,7 +425,12 @@ export const questions = [
     },
 
     // កិច្ចការ
- 
+    // {
+    //     question: "test?",
+    //     answer: "test",
+    //     type: 4,  // represented ester questions
+    //     teacher: "heng"
+    // },
     // គ្រូសុខហេង
 
 ];
