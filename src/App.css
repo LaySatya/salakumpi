@@ -1,2 +1,10 @@
 @import "tailwindcss";
 @plugin "daisyui";
+
+body {
+    font-family: 'Nokora', sans-serif;
+}
+
+.letter-spacing{
+    letter-spacing: 2px;
+}

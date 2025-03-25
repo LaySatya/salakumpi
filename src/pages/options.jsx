@@ -44,15 +44,18 @@ function Options() {
                     </div>
                     <div className="card rounded-box grid h-20 place-items-center mt-16">
                         <ul className="menu menu-xl text-white md:w-56 w-11/12 bg-gray-700 rounded-box">
-                            <li><a onClick={() => handleOptionClick(1)}>អេសរ៉ា</a></li>
+                            <li><a onClick={() => handleOptionClick(1)}>អែសរ៉ា</a></li>
                             <hr />
                             <li><a onClick={() => handleOptionClick(2)}>នេហេមា</a></li>
                             <hr />
-                            <li><a onClick={() => handleOptionClick(3)}>អេសធ័រ</a></li>
+                            <li><a onClick={() => handleOptionClick(3)}>នាងអែសធើ</a></li>
                             <hr />
                             <li><a onClick={() => handleOptionClick(4)}>កិច្ចការ</a></li>
                             <hr />
                             <li><a onClick={() => handleOptionClick(0)}>ទាំងអស់</a></li> {/* 0 means show all */}
+                            {/* <hr />
+                            <li><a onClick={() => handleOptionClick(0)}>លាយឡំ</a></li> 0 means show all */}
+
                         </ul>
                 </div>
             </div>

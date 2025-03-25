@@ -25,11 +25,17 @@ const Questions = () => {
         setShowAnswer(false); // Hide answer when moving to next question
     };
 
+    // Function to go to the previous question
+    const previousQuestion = () => {
+        setCurrentIndex((prevIndex) => (prevIndex - 1 + filteredQuestions.length) % filteredQuestions.length);
+        setShowAnswer(false); // Hide answer when moving to previous question
+    };
+
     return (
         <>
-            <div className='w-screen h-screen bg-gray-800'>
-                <div className="navbar">
-                    <div className="flex-1">
+            <div className="w-screen h-screen bg-gray-800">
+                <div className="navbar flex justify-between">
+                    {/* <div className=""> */}
                         <Link to={"/options"}>
                             <a className="btn btn-primary btn-md text-md">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
@@ -38,12 +44,18 @@ const Questions = () => {
                                 ត្រឡប់
                             </a>
                         </Link>
-                    </div>
+                        <button onClick={() => setShowAnswer(true)} className="btn btn-success btn-ghost btn-outline text-white">
+                            ចម្លើយ
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
+                                <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 10.5V6.75a4.5 4.5 0 1 1 9 0v3.75M3.75 21.75h10.5a2.25 2.25 0 0 0 2.25-2.25v-6.75a2.25 2.25 0 0 0-2.25-2.25H3.75a2.25 2.25 0 0 0-2.25 2.25v6.75a2.25 2.25 0 0 0 2.25 2.25Z" />
+                            </svg>
+                        </button>
+                    {/* </div> */}
                 </div>
 
                 <div className="hero bg-gray-800 mt-16">
-                    <div className="hero-content text-center text-white text-xl">
-                        <div className="max-w-md font-serif">
+                    <div className="hero-content text-center text-white text-xl letter-spacing">
+                        <div className="max-w-md">
                             {filteredQuestions.length > 0 ? (
                                 <>
                                     <div className="mb-4">
@@ -60,15 +72,15 @@ const Questions = () => {
                                 <p>មិនមានសំណួរ</p> // No questions available
                             )}
 
-                            <div className="mt-10 flex justify-center space-x-4">
-                                <button onClick={() => setShowAnswer(true)} className="btn btn-secondary">
-                                    មើលចម្លើយ
+                            <div className="mt-10 flex justify-center space-x-2">
+                                <button onClick={previousQuestion} className="btn btn-ghost bg-gray-700 text-white">
                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
-                                        <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 10.5V6.75a4.5 4.5 0 1 1 9 0v3.75M3.75 21.75h10.5a2.25 2.25 0 0 0 2.25-2.25v-6.75a2.25 2.25 0 0 0-2.25-2.25H3.75a2.25 2.25 0 0 0-2.25 2.25v6.75a2.25 2.25 0 0 0 2.25 2.25Z" />
+                                        <path strokeLinecap="round" strokeLinejoin="round" d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18" />
                                     </svg>
+                                    សំណួរចាស់
                                 </button>
 
-                                <button onClick={nextQuestion} className="btn btn-primary">
+                                <button onClick={nextQuestion} className="btn btn-ghost bg-gray-700 text-white">
                                     សំណួរបន្ទាប់
                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
                                         <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
