@@ -60,21 +60,23 @@ function Home() {
           "url(https://z-p3-scontent.fpnh5-2.fna.fbcdn.net/v/t39.30808-6/476226445_647715824286098_4533025413894353029_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=cc71e4&_nc_eui2=AeFPOGkYBu1p-qYnipQSR-2SLJX1srK55FEslfWysrnkUaRVAD1iT_DzRbWLfO2R-ZV6B2huWxBtp6ourRH8wxAu&_nc_ohc=gM0Ju9Rmt48Q7kNvgGQkhLf&_nc_oc=AdnlT5ykNgJzjgCMHHytamJquuLuMpufAkAJqx9ZReGGbAcfRobNUJraDNDhi9YRW2M&_nc_zt=23&_nc_ht=z-p3-scontent.fpnh5-2.fna&_nc_gid=MJZen4jwfAdEnqM1XPgZig&oh=00_AYEnPaWYDo6F9_yx6FxihGD8iEUv5-J-mTFPkAY3MgGS_A&oe=67E8093D)",
       }}
     >
-      <h3 className="absolute top-8 text-2xl text-white">
-        សាលាគម្ពីរនឹងចាប់ផ្ដើមក្នុងរយៈពេល
-      </h3>
-      <div className="grid absolute top-20 text-white text-2xl grid-flow-col gap-5 text-center auto-cols-max">
-        {timeUnits.map((unit, index) => (
-          <div key={index} className="flex flex-col">
-            <span className="countdown font-mono text-5xl">
-              <span style={{ "--value": unit.value }} aria-live="polite">
-                {unit.value}
+      {/* <div className="flex justify-center w-full"> */}
+        <h3 className="absolute top-8 left-24 mx-auto text-2xl text-white">
+          សាលាគម្ពីរនឹងចាប់ផ្ដើមក្នុងរយៈពេល
+        </h3>
+        <div className="grid absolute left-28 top-20 text-white text-2xl grid-flow-col gap-5 text-center auto-cols-max">
+          {timeUnits.map((unit, index) => (
+            <div key={index} className="flex flex-col">
+              <span className="countdown font-mono text-5xl">
+                <span style={{ "--value": unit.value }} aria-live="polite">
+                  {unit.value}
+                </span>
               </span>
-            </span>
-            {unit.label}
-          </div>
-        ))}
-      </div>
+              {unit.label}
+            </div>
+          ))}
+        </div>
+      {/* </div> */}
 
       <div className="hero-overlay"></div>
 
