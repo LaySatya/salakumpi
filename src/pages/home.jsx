@@ -61,7 +61,7 @@ function Home() {
       }}
     >
       {/* <div className="flex justify-center w-full"> */}
-        <h3 className="absolute top-8 m-10  mx-auto text-2xl text-white">
+        <h3 className="absolute top-8 m-10 text-2xl text-white">
           សាលាគម្ពីរនឹងចាប់ផ្ដើមក្នុងរយៈពេល
         </h3>
         <div className="grid absolute top-20 m-10 text-blue-400 shadow p-2 shadow-blue-200 text-2xl grid-flow-col gap-5 text-center auto-cols-max">
