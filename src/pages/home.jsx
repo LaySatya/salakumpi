@@ -61,10 +61,10 @@ function Home() {
       }}
     >
       {/* <div className="flex justify-center w-full"> */}
-        <h3 className="absolute top-8 left-24 mx-auto text-2xl text-white">
+        <h3 className="absolute top-8  mx-auto text-2xl text-white">
           សាលាគម្ពីរនឹងចាប់ផ្ដើមក្នុងរយៈពេល
         </h3>
-        <div className="grid absolute left-28 top-20 text-white text-2xl grid-flow-col gap-5 text-center auto-cols-max">
+        <div className="grid absolute top-20 text-white text-2xl grid-flow-col gap-5 text-center auto-cols-max">
           {timeUnits.map((unit, index) => (
             <div key={index} className="flex flex-col">
               <span className="countdown font-mono text-5xl">
