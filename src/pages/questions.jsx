@@ -6,8 +6,27 @@ const Questions = () => {
     const { type } = useParams();
     const selectedType = parseInt(type, 10);
 
+    // State for storing the shuffled questions (for selectedType === 5)
+    const [randomizedQuestions, setRandomizedQuestions] = useState([]);
+
+    // Function to shuffle questions
+    const getRandomQuestions = () => {
+        return [...questions].sort(() => Math.random() - 0.5);
+    };
+
+    // Set shuffled questions only when selectedType === 5
+    useEffect(() => {
+        if (selectedType === 5) {
+            setRandomizedQuestions(getRandomQuestions());
+        }
+    }, [selectedType]);
+
     // Filter questions based on type
-    const filteredQuestions = selectedType === 0 ? questions : questions.filter(q => q.type === selectedType);
+    const filteredQuestions = selectedType === 0
+        ? questions
+        : selectedType === 5
+        ? randomizedQuestions // Use shuffled questions
+        : questions.filter(q => q.type === selectedType);
 
     // State to track the index of the current question
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -31,6 +50,9 @@ const Questions = () => {
         setShowAnswer(false); // Hide answer when moving to previous question
     };
 
+    
+
+    // get teacher name
     const getTeacherName = (name) => {
         
         switch (name) {
@@ -45,6 +67,8 @@ const Questions = () => {
 
         }
     }
+
+    // get bible name
     const getBible = (bible) => {
         switch (bible) {
             case 1:

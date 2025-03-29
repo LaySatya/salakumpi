@@ -53,9 +53,10 @@ function Options() {
                             <li><a onClick={() => handleOptionClick(4)}>កិច្ចការ</a></li>
                             <hr />
                             <li><a onClick={() => handleOptionClick(0)}>ទាំងអស់</a></li> {/* 0 means show all */}
-                            {/* <hr />
-                            <li><a onClick={() => handleOptionClick(0)}>លាយឡំ</a></li> 0 means show all */}
-
+                            <hr />
+                            <li><a onClick={() => handleOptionClick(5)}>ឆ្លាស់</a></li>
+                            <hr />
+                            <li><a disabled  className=' text-white px-4 py-2 rounded opacity-50 cursor-not-allowed'>សំណួរក្នុងគម្ពីរ</a></li>
                         </ul>
                 </div>
             </div>
